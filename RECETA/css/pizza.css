@@ -1,0 +1,13 @@
+/******************************************************************/
+/*                  hoja de estilo de pizza.html                  */
+/*                  autor: Juan Carlos Ocaña HEredia              */
+/*                  version: 1.0                                  */
+/*                  fecha: octubre 2023                           */
+/*                  ejercicio para portfolio (I)                  */
+/******************************************************************/
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: fuchsia;
+}
