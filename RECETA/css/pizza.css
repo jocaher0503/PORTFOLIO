@@ -5,9 +5,45 @@
 /*                  fecha: octubre 2023                           */
 /*                  ejercicio para portfolio (I)                  */
 /******************************************************************/
-*{
-    box-sizing: border-box;
+
+/*Organización*/
+
+/* 1.- */
+
+@font-face {
+    font-family: textonormal;
+    src: url(../fonts/OpenSans-Regular.ttf);
 }
-body{
-    background-color: fuchsia;
+@font-face {
+    font-family: titulo;
+    src: url(../fonts/Uni\ Sans\ Heavy.otf);
 }
+
+/* 2.- Selector wildcard (si lo hay) */
+
+*{box-sizing: border-box;} /*indica que el width de cada box será contando el borde hacia dentro */
+
+/* 3.- Estructura del layout general */
+
+body{background-color: rgb(238, 204, 147);
+     font-family: textonormal;}
+#wrapper {background-color: rgb(228, 57, 57);
+          width: 70%;
+          margin: auto;
+          padding: 10%;
+          padding-top: 2%;}
+
+h1,h2{font-family: titulo;
+      text-align: center;
+      border-bottom: 3px solid rgb(238, 204, 147);
+      margin: auto;
+      padding: 10px;
+      margin-bottom: 40px;
+      box-shadow: 10px 10px 10px rgb(238, 204, 147);}
+h1{font-size: 3.5em;
+   width: 50%;}
+h2{font-size: 2.5em;
+   width: 70%;}
+blockquote{border-left: 3px solid rgb(228, 57, 57);}
+
+/* 4.- Section a section (si las hubiera) en detalle */
