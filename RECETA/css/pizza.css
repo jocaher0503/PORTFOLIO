@@ -26,7 +26,8 @@
 /* 3.- Estructura del layout general */
 
 body{background-color: rgb(238, 204, 147);
-     font-family: textonormal;}
+     font-family: textonormal;
+    background-image: url(../img/patron-costuras-iconos-rebanada-pizza-comida-rapida-fondo-amarillo_126267-11779.avif);}
 #wrapper {background-color: rgb(228, 57, 57);
           width: 70%;
           margin: auto;
@@ -35,17 +36,17 @@ body{background-color: rgb(238, 204, 147);
 
 h1,h2{font-family: titulo;
       text-align: center;
-      border-bottom: 3px solid rgb(238, 204, 147);
+      border-bottom: 3px solid rgb(255, 255, 0);
       margin: auto;
       padding: 10px;
       margin-bottom: 40px;
-      box-shadow: 10px 10px 10px rgb(238, 204, 147);
-      color: rgb(238, 204, 147);
+      box-shadow: 10px 10px 10px rgb(255, 255, 0);
+      color: black;
     font-weight: bold;}
 h1{font-size: 3.5em;
    width: 50%;}
 h2{font-size: 2.5em;
    width: 70%;}
-blockquote{border-left: 3px solid rgb(228, 57, 57);}
+blockquote{border-left: 3px solid rgb(255, 255, 0);}
 
 /* 4.- Section a section (si las hubiera) en detalle */
