@@ -74,3 +74,14 @@ dt{
 }
 
 /* 4.- Section a section (si las hubiera) en detalle */
+
+
+
+/******************* GESTIÓN DE LA RESPONSIVIDAD **********************/
+
+@media only screen and (width<900px) {
+    #wrapper{width: 95%;}
+    h1,h2{width: 80%;}
+    #pizza2{width: 100%;
+            clear: both;}   /* eliminar el float right */
+}
