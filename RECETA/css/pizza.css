@@ -79,9 +79,14 @@ dt{
 
 /******************* GESTIÓN DE LA RESPONSIVIDAD **********************/
 
-@media only screen and (width<900px) {
+@media only screen and (width<900px) {  /* corte para una tablet */
     #wrapper{width: 95%;}
     h1,h2{width: 80%;}
-    #pizza2{width: 100%;
+    #pizza2{width: 80%;
+            margin-bottom: 20px;
             clear: both;}   /* eliminar el float right */
+}
+@media only screen and (width<600px) {  /* corte para un móvil */
+    h1{font-size: 2.5em;}
+    h2{font-size: 1.5em;}
 }
