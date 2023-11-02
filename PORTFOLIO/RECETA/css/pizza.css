@@ -1,0 +1,92 @@
+/******************************************************************/
+/*                  hoja de estilo de pizza.html                  */
+/*                  autor: Juan Carlos Ocaña HEredia              */
+/*                  version: 1.0                                  */
+/*                  fecha: octubre 2023                           */
+/*                  ejercicio para portfolio (I)                  */
+/******************************************************************/
+
+/*Organización*/
+
+/* 1.- */
+
+@font-face {
+    font-family: textonormal;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: titulo;
+    src: url(../fonts/Uni\ Sans\ Heavy.otf);
+}
+
+/* 2.- Selector wildcard (si lo hay) */
+
+*{box-sizing: border-box;} /*indica que el width de cada box será contando el borde hacia dentro */
+
+/* 3.- Estructura del layout general */
+
+body{
+    background-color: rgb(238, 204, 147);
+    font-family: textonormal;
+    background-image: url(../img/patron-costuras-iconos-rebanada-pizza-comida-rapida-fondo-amarillo_126267-11779.avif);}
+#wrapper {
+    background-color: rgb(228, 57, 57);
+    width: 70%;
+    margin: auto;
+    padding: 10%;
+    padding-top: 2%;
+}
+h1,h2{
+    font-family: titulo;
+    text-align: center;
+    border-bottom: 3px solid rgb(255, 255, 0);
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 40px;
+    box-shadow: 10px 10px 10px rgb(255, 255, 0);
+    color: black;
+    font-weight: bold;
+}
+h1{
+    font-size: 3.5em;
+    width: 50%;
+}
+h2{
+    font-size: 2.5em;
+    width: 70%;
+}
+blockquote{
+    border-left: 5px solid rgb(255, 255, 0);
+    padding-left: 5px;
+}
+#pizza{
+    width: 50%;
+    display: block; /* fuerza a la imgaen a portarse como un bloque */
+    margin: auto;  /* centra la imagen */
+}
+#pizza2{
+    width: 25%;
+    float: right;
+}
+dt{
+    text-decoration: overline underline;
+    color: rgb(255, 255, 0);
+}
+
+/* 4.- Section a section (si las hubiera) en detalle */
+
+
+
+/******************* GESTIÓN DE LA RESPONSIVIDAD **********************/
+
+@media only screen and (width<900px) {  /* corte para una tablet */
+    #wrapper{width: 95%;}
+    h1,h2{width: 80%;}
+    #pizza2{width: 80%;
+            margin-bottom: 20px;
+            clear: both;}   /* eliminar el float right */
+}
+@media only screen and (width<600px) {  /* corte para un móvil */
+    h1{font-size: 2.5em;}
+    h2{font-size: 1.5em;}
+}
