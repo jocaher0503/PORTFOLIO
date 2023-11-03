@@ -64,10 +64,6 @@ blockquote{
     display: block; /* fuerza a la imgaen a portarse como un bloque */
     margin: auto;  /* centra la imagen */
 }
-#pizza2{
-    width: 25%;
-    float: right;
-}
 dt{
     text-decoration: overline underline;
     color: rgb(255, 255, 0);
