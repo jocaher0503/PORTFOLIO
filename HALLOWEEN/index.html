@@ -3,13 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HALLOWEEN</title>
     <link rel="stylesheet" href="./css/halloween.css">
+    <link rel="shortcut icon" href="./img/4336686.png" type="image/x-icon">
+    <script src="./js/halloween.js"></script>
 </head>
 <body>
     <div id="escenario">
-
+        <!-- first sensible area -->
+        <div id="pumpkin" onmouseover="show('bats');sound('batsound')" onmouseout="hide('bats')">
+        <div id="door" onmouseover="showface('face')" onmouseout="hideface('face')">
+        </div>
+            <!-- nothing at all -->
+        </div>
+        <img id="bats" src="./img/bats.gif" alt="">
+        <img id="face" src="./img/chucky.gif" alt="">
+        <audio id="batsound">
+            <source src="./sounds/bats-vocalizing.mp3" type="audio/mp3">
+        </audio>
     </div>
-    
 </body>
 </html>
