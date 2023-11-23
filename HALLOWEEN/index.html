@@ -10,16 +10,26 @@
 </head>
 <body>
     <div id="escenario">
+        <p id="moontext">Don't touch the moon</p>
+        <p id="pumpkintext">Find the best pumpkin</p>
+        <p id="doortext">Now you can enter to the castle</p>
         <!-- first sensible area -->
-        <div id="pumpkin" onmouseover="show('bats');sound('batsound')" onmouseout="hide('bats')">
-        <div id="door" onmouseover="showface('face')" onmouseout="hideface('face')">
-        </div>
-            <!-- nothing at all -->
-        </div>
+        <div id="pumpkin" onmouseover="showbats('bats');soundbats('batsound')" onmouseout="hidebats('bats');silencebats('batsound')"></div>
         <img id="bats" src="./img/bats.gif" alt="">
-        <img id="face" src="./img/chucky.gif" alt="">
-        <audio id="batsound">
-            <source src="./sounds/bats-vocalizing.mp3" type="audio/mp3">
+        <audio id="batsound" preload="auto">
+            <source src="./sounds/bats.mp3" type="audio/mp3">
+        </audio>
+
+        <div id="door" onmouseover="showchucky('chucky');soundchucky('chuckysound')" onmouseout="hidechucky('chucky');silencechucky('chuckysound')"></div>
+        <img id="chucky" src="./img/chucky.gif" alt="">
+        <audio id="chuckysound" preload="auto">
+            <source src="./sounds/chucky.mp3" type="audio/mp3">
+        </audio>
+
+        <div id="moon" onmouseover="showjason('jason');soundjason('jasonsound')" onmouseout="hidejason('jason');silencejason('jasonsound')"></div>
+        <img id="jason" src="./img/jason.gif" alt="">
+        <audio id="jasonsound" preload="auto">
+            <source src="./sounds/jason.mp3" type="audio/mp3">
         </audio>
     </div>
 </body>

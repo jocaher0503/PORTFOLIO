@@ -1,24 +1,52 @@
-/*****************************************************************/
+/******************************************************************/
+/*                hoja de js de halloween.html                    */
+/*                autor: Juan Carlos Ocaña HEredia                */
+/*                version: 1.0                                    */
+/*                fecha: noviembre 2023                           */
+/*                ejercicio para portfolio (II)                   */
+/******************************************************************/
 
+/************************* BATS ****************************/
 
+function showbats(bats){
+    document.getElementById(bats).style.visibility="visible"; /* extrae (get) un elemento (bats) y cambia algo en su estilo (visibilidad) */
+}
+function hidebats(bats){
+    document.getElementById(bats).style.visibility="hidden"; /* extrae (get) un elemento (bats) y cambia algo en su estilo (visibilidad) */
+}
+function soundbats(element){
+    document.getElementById(element).play();
+}
+function silencebats(element){
+    document.getElementById(element).pause();
+}
 
+/************************* CHUCKY ****************************/
 
+function showchucky(chucky){
+    document.getElementById(chucky).style.visibility="visible"; 
+}
+function hidechucky(chucky){
+    document.getElementById(chucky).style.visibility="hidden";
+}
+function soundchucky(chucky){
+    document.getElementById(chucky).play();
+}
+function silencechucky(chucky){
+    document.getElementById(chucky).pause();
+}
 
-function show(element){
-    document.getElementById(element).style.visibility="visible"; /* extrae (get) un elemento (bats) y cambia algo en su estilo (visibilidad) */
+/************************* JASON ****************************/
+
+function showjason(jason){
+    document.getElementById(jason).style.visibility="visible"; 
 }
-function hide(element){
-    document.getElementById(element).style.visibility="hidden"; /* extrae (get) un elemento (bats) y cambia algo en su estilo (visibilidad) */
+function hidejason(jason){
+    document.getElementById(jason).style.visibility="hidden";
 }
-function showface(element){
-    document.getElementById(element).style.visibility="visible"; 
+function soundjason(jason){
+    document.getElementById(jason).play();
 }
-function hide(element){
-    document.getElementById(element).style.visibility="hidden";
-}
-function sound(element){
-    document.getElementById('batsound').play();
-}
-function silence(element){
-    document.getElementById('batsound').pause();
+function silencejason(jason){
+    document.getElementById(jason).pause();
 }

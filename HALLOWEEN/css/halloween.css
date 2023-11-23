@@ -1,12 +1,20 @@
-/*****************************************************************/
+/******************************************************************/
+/*                hoja de estilo de halloween.html                */
+/*                autor: Juan Carlos Ocaña HEredia                */
+/*                version: 1.0                                    */
+/*                fecha: noviembre 2023                           */
+/*                ejercicio para portfolio (II)                   */
+/******************************************************************/
 
+/*************************** fonts ********************************/
 
+/*********************** general style ****************************/
+@font-face {
+    font-family: textonormal;
+    src: url(../fonts/Alphd___.ttf);
+}
 
-/*****************************************************************/
-
-/*************************** fonts *******************************/
-
-/*********************** general style ***************************/
+*{box-sizing: border-box;}
 
 body{
     background-color: #090909;
@@ -19,9 +27,73 @@ body{
     margin: auto;
     position: relative;
 }
+/******************** TEXT ******************************/
+#moontext{
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    color: white;
+    font-family: textonormal;
+    font-size: 2em;
+}
+#pumpkintext{
+    position: absolute;
+    top: 590px;
+    right: 400px;
+    color: white;
+    font-family: textonormal;
+    font-size: 2em;
+}
+#doortext{
+    position: absolute;
+    bottom: 270px;
+    right: 370px;
+    color: white;
+    font-family: textonormal;
+    font-size: 2em;
+}
 
+/******************** animation area ********************/
+@keyframes siniestro{
+    0%{
+        color: white;
+        opacity: 0.25;
+    }
+    25%{
+        color: white;
+        opacity: 0.5;
+    }
+    50%{color: rgb(232, 97, 97);
+        opacity: 1;
+    }
+    75%{
+        color: rgb(225, 145, 145);
+        opacity: 1;
+    }
+    100%{
+        color: white;
+    opacity: 0;}
+}
+#moontext{
+    opacity: 0;                         /**** entre 0 (opaco total) y 1 (transparente total) ****/
+    animation-name: siniestro;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+#pumpkintext{
+    opacity: 0;                         /**** entre 0 (opaco total) y 1 (transparente total) ****/
+    animation-name: siniestro;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+#doortext{
+    opacity: 0;                         /**** entre 0 (opaco total) y 1 (transparente total) ****/
+    animation-name: siniestro;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
 
-/************************ pumpkin area ***************************/
+/******************** PUMPKIN ***************************/
 #pumpkin{
     width: 200px;
     height: 200px;
@@ -36,16 +108,35 @@ body{
     right: 150px;
     visibility: hidden;
 }
+/******************** DOOR ******************************/
 #door{
     width: 100px;
     height: 100px;
-    border: 2px solid white;
+    /*border: 2px solid white;*/
     position: absolute;
-    bottom: 170px;
-    right: 360px;
+    bottom: 200px;
+    right: 490px;
 }
-#face{
+#chucky{
     position: absolute;
     right: 360px;
     bottom: 120px;
+    visibility: hidden;
+}
+/******************** MOON ******************************/
+#moon{
+    width: 100px;
+    height: 100px;
+    /*border: 2px solid white;*/
+    position: absolute;
+    top: 90px;
+    right: 400px;
+}
+#jason{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    right: 100px;
+    bottom: 100px;
+    visibility: hidden;
 }
