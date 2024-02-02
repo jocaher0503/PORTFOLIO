@@ -1,0 +1,44 @@
+/****************************************************************/
+/*      mystyle RecetaBootsrap.css                              */
+/*      author:  Juan Carlos Ocaña Heredia                      */
+/*      version. 1.0                                            */
+/*      comment: project for Lenguaje de Marcas - 1ºDAM         */
+/****************************************************************/
+
+
+body{
+    background-image: url(../img/Mantel.jpg);
+}
+/************************* NEW COLORS ***************************/
+.border-purple{
+    border-color: rgb(0, 0, 0)!important;       /* Debe haber alguna incompatibilidad con la hoja de bootstrap */
+}
+
+/************************* NEW SPACING ***************************/
+.p-6{
+    padding: 7em;
+}
+.ps-6{
+    padding-left: 7em;
+}
+
+/************************* NEW SIZES ***************************/
+.vh-85{
+    height: 85vh;
+}
+.vw-85{
+    width: 85vw;
+}
+.mw-800{
+    max-width: 800px;
+}
+/************************* NEW FONTS ***************************/
+@font-face {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    src: url();
+}
+
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-image: url(../img/Mantel.jpg);
+}
